@@ -1,0 +1,58 @@
+# Unity generated
+[Tt]emp/
+[Ll]ibrary/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Ll]ibrary/
+[Oo]bj/
+[Ll]ightmass/
+[Ww]eb/
+[Ll]idgren/
+[Oo]bsolete/
+[Tt]humbs.db
+[Tt]emporaryGeneratedFile-*
+[Rr]ecover-*
+[Ii]pch/
+[Bb]ackups/
+[Aa]utoBackup/
+[An]droid/libs/armeabi/
+[An]droid/libs/armeabi-v7a/
+[An]droid/libs/arm64-v8a/
+[An]droid/libs/x86/
+[An]droid/libs/x86_64/
+
+# Visual Studio / MonoDevelop / Rider
+.vscode/
+.idea/
+.vs/
+*.suo
+*.ntvs*
+*.nupkg
+*.sln.iml
+*.sln.docstates
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+*.unityproj
+*.booproj
+*.pidb
+*.VC.db
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
