@@ -6,11 +6,20 @@ public class LineRendererManager
 {
     public LineRenderer lineRenderer;
     public List<Vector3> linePositions = new List<Vector3>();
-    private Pathfinding pathfinding = new Pathfinding();
+    private Pathfinding pathfinding;
+    private Quad quad;
+
+
+    public LineRendererManager(Pathfinding pathfinding, Quad quad)
+    {
+        this.pathfinding = pathfinding;
+        this.quad = quad;
+    }
+
 
     public void AddToLinePositions(Vector3 position)
     {
-        Quad quad = pathfinding.GetGridQuadAtPosition(position);
+        pathfinding.GetGridQuadAtPosition(position);
         QuadType type = quad.type;
         if (type != QuadType.Enemy)
         {
@@ -21,7 +30,7 @@ public class LineRendererManager
 
     public void RemoveFromLinePositions(Vector3 position)
     {
-        Quad quad = pathfinding.GetGridQuadAtPosition(position);
+        pathfinding.GetGridQuadAtPosition(position);
         QuadType type = quad.type;
         if (type != QuadType.Enemy)
         {
@@ -62,4 +71,12 @@ public class LineRendererManager
         lineRenderer.SetPositions(linePositions.ToArray());
     }
 
+    public void SetPositions(List<GameObject> selectedElements)
+    {
+        this.lineRenderer.positionCount = selectedElements.Count;
+        for (int i = 0; i < selectedElements.Count; i++)
+        {
+            this.lineRenderer.SetPosition(i, selectedElements[i].transform.position);
+        }
+    }
 }

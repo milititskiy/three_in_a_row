@@ -45,11 +45,13 @@
      <Compile Include="Assets\Scripts\Copy_Pathfinding.cs" />
      <Compile Include="Assets\Scripts\Pathfinding\QuadTypeExtensions.cs" />
      <Compile Include="Assets\Scripts\Pathfinding\PathManager.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Pathfinding\HighlightPlayer.cs" />
      <Compile Include="Assets\Scripts\Pathfinding\Quad.cs" />
      <Compile Include="Assets\Scripts\Pathfinding\QuadTypeManager.cs" />
      <Compile Include="Assets\Scripts\Pathfinding\MoveManager.cs" />
      <None Include="Assets\Icons\BlakLineShader.shader" />
+     <None Include="Assets\Fantasy RPG Icons\readme.txt" />
      <None Include="Assets\Shaders\BorderHighlight.shader" />
      <None Include="Assets\Icons\GreenCircleShader.shader" />
      <None Include="Assets\Shaders\GridShader.shader" />

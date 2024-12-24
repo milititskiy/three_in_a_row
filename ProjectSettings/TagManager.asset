@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GridQuad
   - Grid
+  - GameManager
   layers:
   - Default
   - TransparentFX
