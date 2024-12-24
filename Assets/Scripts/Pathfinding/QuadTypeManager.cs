@@ -7,13 +7,24 @@ public enum QuadType
     Flask,
     Shield,
     Coin,
-    Enemy
+    Enemy,
+    Player
 }
 
 public class QuadTypeManager
 {
+    private static bool playerSelected = false;
+
+
+
+
     public static QuadType GetRandomQuadType()
     {
+        // if (!playerSelected)
+        // {
+        //     playerSelected = true;
+        //     return QuadType.Player;
+        // }
         float randomValue = Random.value;
 
         // Updated probabilities:
